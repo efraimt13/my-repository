@@ -1,0 +1,73 @@
+/* Basic Reset for consistent styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fullscreen canvas */
+#gameCanvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Game UI styling */
+#gameUI {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  z-index: 10; /* Ensures the UI is on top of the game */
+}
+
+#healthBarContainer {
+  margin-bottom: 10px;
+}
+
+#healthBar {
+  width: 200px;
+  height: 20px;
+}
+
+#scoreDisplay {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Main Menu Styling */
+#mainMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  z-index: 100; /* Menu should appear above everything */
+}
+
+#mainMenu h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#startGameBtn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #00b894;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#startGameBtn:hover {
+  background-color: #00a081;
+}
